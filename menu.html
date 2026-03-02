@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Gupshup Family Restaurant Jamshedpur</title>
+    <meta name="description"
+        content="Explore our affordable digital menu featuring delicious North Indian mains, Indo-Chinese favorites, starters, and beverages. Prices range from ₹200-400.">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .menu-category {
+            margin-bottom: 60px;
+        }
+
+        .menu-category-title {
+            font-size: 2rem;
+            color: var(--primary-red);
+            border-bottom: 2px dashed var(--secondary-gold);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .menu-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .menu-item {
+            background: var(--bg-white);
+            padding: 20px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border-light);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            transition: var(--transition);
+        }
+
+        .menu-item:hover {
+            box-shadow: var(--shadow-sm);
+            border-color: var(--secondary-gold);
+        }
+
+        .menu-item-info h4 {
+            font-size: 1.2rem;
+            color: var(--text-dark);
+            font-family: var(--font-body);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .menu-item-info p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+            color: var(--text-light);
+        }
+
+        .menu-item-price {
+            font-weight: 700;
+            color: var(--primary-red);
+            font-size: 1.1rem;
+            min-width: 60px;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body style="background: var(--bg-cream)">
+
+    <!-- Header Navigation -->
+    <header class="header scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Gupshup<span class="logo-sub">Family Restaurant</span></a>
+            <button class="mobile-toggle"><i class="fas fa-bars"></i></button>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="menu.html" class="nav-link active">Menu</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <div class="nav-actions-mobile">
+                    <a href="reservation.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book
+                        Table</a>
+                </div>
+            </nav>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-gold swiggy-btn"><i class="fas fa-motorcycle"></i> Order Online</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header Hero -->
+    <div class="page-header"
+        style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/images/chinese-dish.png') center/cover; padding: 150px 0 80px; text-align: center; color: white;">
+        <div class="container animate-fade-up">
+            <h1 class="hero-title">Our Menu</h1>
+            <p class="hero-subtitle">Affordable delights ranging from ₹200–400 per person.</p>
+        </div>
+    </div>
+
+    <!-- Menu Section -->
+    <section class="section-padding">
+        <div class="container animate-fade-up delay-1">
+
+            <div class="menu-category">
+                <h3 class="menu-category-title">Starters</h3>
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Paneer Tikka</h4>
+                            <p>Cottage cheese marinated in spices and grilled in a tandoor.</p>
+                        </div>
+                        <div class="menu-item-price">₹180</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Chicken Reshmi Kebab</h4>
+                            <p>Silky textured, flavorful minced chicken kebabs.</p>
+                        </div>
+                        <div class="menu-item-price">₹220</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Crispy Chilli Babycorn</h4>
+                            <p>Indo-chinese style crisp fried babycorn tossed in sauce.</p>
+                        </div>
+                        <div class="menu-item-price">₹160</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3 class="menu-category-title">North Indian Main Course</h3>
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Murg Makhani (Butter Chicken)</h4>
+                            <p>Tender chicken in a rich, creamy tomato gravy.</p>
+                        </div>
+                        <div class="menu-item-price">₹280</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Kadai Paneer</h4>
+                            <p>Cottage cheese cooked with bell peppers and whole spices.</p>
+                        </div>
+                        <div class="menu-item-price">₹220</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Dal Makhani</h4>
+                            <p>Slow-cooked black lentils in creamy butter gravy.</p>
+                        </div>
+                        <div class="menu-item-price">₹150</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Chicken Bharta</h4>
+                            <p>Shredded chicken in a smooth, mildly spiced egg gravy.</p>
+                        </div>
+                        <div class="menu-item-price">₹250</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3 class="menu-category-title">Chinese Main Course</h3>
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Chilli Chicken</h4>
+                            <p>Classic crispy chicken tossed in spicy soya-chilli glaze.</p>
+                        </div>
+                        <div class="menu-item-price">₹240</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Veg Manchurian</h4>
+                            <p>Vegetable dumplings in a tangy soy-based sauce.</p>
+                        </div>
+                        <div class="menu-item-price">₹180</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Schezwan Chicken</h4>
+                            <p>Spicy diced chicken tossed in fiery schezwan sauce.</p>
+                        </div>
+                        <div class="menu-item-price">₹250</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3 class="menu-category-title">Breads, Rice & Noodles</h3>
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Garlic Naan / Butter Naan</h4>
+                            <p>Soft tandoor baked bread with garlic/butter.</p>
+                        </div>
+                        <div class="menu-item-price">₹50</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Jeera Rice</h4>
+                            <p>Basmati rice tempered with cumin seeds.</p>
+                        </div>
+                        <div class="menu-item-price">₹110</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Chicken Hakka Noodles</h4>
+                            <p>Wok tossed noodles with shredded chicken and veggies.</p>
+                        </div>
+                        <div class="menu-item-price">₹160</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3 class="menu-category-title">Desserts & Beverages</h3>
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Gulab Jamun (2 pcs)</h4>
+                            <p>Warm, sweet fried dough balls soaked in sugar syrup.</p>
+                        </div>
+                        <div class="menu-item-price">₹60</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Fresh Lime Soda</h4>
+                            <p>Classic refreshing beverage, sweet or salted.</p>
+                        </div>
+                        <div class="menu-item-price">₹50</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Gupshup Family Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

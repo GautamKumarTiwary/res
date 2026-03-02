@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve a Table | Gupshup Family Restaurant</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Gupshup<span class="logo-sub">Family Restaurant</span></a>
+            <button class="mobile-toggle"><i class="fas fa-bars"></i></button>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <div class="nav-actions-mobile">
+                    <a href="reservation.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book
+                        Table</a>
+                </div>
+            </nav>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-gold swiggy-btn"><i class="fas fa-motorcycle"></i> Order Online</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-header"
+        style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('assets/images/hero-bg.png') center/cover; padding: 150px 0 80px; text-align: center; color: white;">
+        <div class="container animate-fade-up">
+            <h1 class="hero-title">Reserve Your Table</h1>
+            <p class="hero-subtitle">Ensure a wonderful dining experience by booking ahead.</p>
+        </div>
+    </div>
+
+    <section class="section-padding">
+        <div class="container">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; justify-content: center;">
+
+                <!-- Reservation Form -->
+                <div class="reservation-card animate-fade-up">
+                    <h2 class="section-title" style="font-size: 2rem; margin-bottom: 30px;">Book Online</h2>
+                    <form action="#" method="POST"
+                        onsubmit="event.preventDefault(); alert('Reservation Request Sent Successfully!');">
+                        <div class="form-group">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" required placeholder="+91 99000 00000">
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                            <div class="form-group">
+                                <label class="form-label">Date</label>
+                                <input type="date" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Time</label>
+                                <input type="time" class="form-control" required min="11:00" max="23:00">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Number of Guests</label>
+                            <select class="form-control" required>
+                                <option value="1">1 Person</option>
+                                <option value="2" selected>2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                                <option value="5">5 People</option>
+                                <option value="6+">6+ People (Party)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Request
+                            Booking</button>
+                    </form>
+                </div>
+
+                <!-- Instant Booking Methods -->
+                <div class="animate-fade-up delay-1"
+                    style="display: flex; flex-direction: column; justify-content: center;">
+                    <h2 class="section-title" style="font-size: 2rem; margin-bottom: 20px;">Instant Booking</h2>
+                    <p style="margin-bottom: 30px; font-size: 1.1rem;">For immediate confirmation or larger party
+                        bookings, please contact us directly via Phone or WhatsApp.</p>
+
+                    <a href="https://wa.me/919934120926?text=Hi!%20I%20would%20like%20to%20book%20a%20table%20at%20Gupshup%20Restaurant."
+                        target="_blank" class="contact-info-item"
+                        style="text-decoration: none; padding: 20px; background: var(--bg-white); border-radius: var(--radius-sm); border-left: 4px solid #25D366; box-shadow: var(--shadow-sm); transition: var(--transition);">
+                        <div class="contact-info-icon" style="background:#25D366; color:white;"><i
+                                class="fab fa-whatsapp"></i></div>
+                        <div class="contact-info-text">
+                            <h4>Book via WhatsApp</h4>
+                            <p style="color: var(--text-light);">Fastest response</p>
+                        </div>
+                    </a>
+
+                    <a href="tel:+919934120926" class="contact-info-item"
+                        style="text-decoration: none; padding: 20px; background: var(--bg-white); border-radius: var(--radius-sm); border-left: 4px solid var(--primary-red); box-shadow: var(--shadow-sm); transition: var(--transition);">
+                        <div class="contact-info-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-info-text">
+                            <h4>Call Us Now</h4>
+                            <p style="color: var(--text-light);">+91 99341 20926</p>
+                        </div>
+                    </a>
+
+                    <div
+                        style="margin-top: 20px; padding: 20px; background: var(--bg-cream); border-radius: var(--radius-sm);">
+                        <h4 style="color: var(--primary-red); margin-bottom: 10px;"><i class="fas fa-info-circle"></i>
+                            Good to know</h4>
+                        <ul style="padding-left: 20px; font-size: 0.9rem; color: var(--text-dark);">
+                            <li>Table holding time is 15 minutes past booking.</li>
+                            <li>Walk-ins are always welcome depending on availability.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Gupshup Family Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

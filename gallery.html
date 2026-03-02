@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Gupshup Family Restaurant</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--radius-sm);
+            aspect-ratio: 1;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(139, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Gupshup<span class="logo-sub">Family Restaurant</span></a>
+            <button class="mobile-toggle"><i class="fas fa-bars"></i></button>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <div class="nav-actions-mobile">
+                    <a href="reservation.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book
+                        Table</a>
+                </div>
+            </nav>
+            <div class="nav-actions">
+                <a href="reservation.html" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book Table</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-header" style="padding: 150px 0 50px; text-align: center;">
+        <div class="container">
+            <h1 class="hero-title" style="color: var(--primary-red);">Gallery</h1>
+            <p style="color: var(--text-dark);">A glimpse into our appetizing dishes and welcoming atmosphere.</p>
+            <div style="width: 60px; height: 3px; background: var(--secondary-gold); margin: 20px auto;"></div>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <section class="section-padding" style="padding-top: 20px;">
+        <div class="container animate-fade-up">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/indian-dish.png" alt="North Indian Food">
+                    <div class="gallery-overlay">Delicious Indian</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/chinese-dish.png" alt="Chinese Food">
+                    <div class="gallery-overlay">Authentic Chinese</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/hero-bg.png" alt="Restaurant Interior">
+                    <div class="gallery-overlay">Family Ambiance</div>
+                </div>
+                <!-- Reusing images for layout demonstration -->
+                <div class="gallery-item">
+                    <img src="assets/images/indian-dish.png" alt="Plate Setting"
+                        style="filter: brightness(0.9) contrast(1.1);">
+                    <div class="gallery-overlay">Hygienic Serving</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/chinese-dish.png" alt="Kitchen Prep"
+                        style="filter: sepia(0.2) hue-rotate(-20deg);">
+                    <div class="gallery-overlay">Fresh Prep</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/hero-bg.png" alt="Dining Table" style="filter: saturate(1.2);">
+                    <div class="gallery-overlay">Cozy Seating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Gupshup Family Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
